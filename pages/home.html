@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
+    <link href="../modules/bootstrap-5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../modules/fontawesome-free-6.4.0-web/css/all.css">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
     <script src="../modules/jquery3.7.0.js"></script>
     <script> 
         $(function(){
-          $("#header").load("./default-modules/header.html"); 
+          $("#header").load("./default-modules/header.html");
+          $("#navigation").load("./default-modules/navigation.html");
         });
         </script>  
 </head>
 <body>
     <header>
-        <div id="header"></div>
+        <div id="header" class="header"></div>
     </header>
+    <nav>
+        <div id="navigation" class="navigation"></div>
+    </nav>
         <h1> Homepage </h1>
         
-    
+    <script src="../modules/bootstrap-5.3.0/js/bootstrap.min.js"></script>
+    <script src="../modules/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
