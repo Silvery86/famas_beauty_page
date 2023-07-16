@@ -9,11 +9,13 @@
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/header.css" rel="stylesheet">
     <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/home.css" rel="stylesheet">
     <script src="../modules/jquery3.7.0.js"></script>
     <script> 
         $(function(){
           $("#header").load("./default-modules/header.html");
           $("#navigation").load("./default-modules/navigation.html");
+          $("#banner").load("./home/banner.html");
         });
         </script>  
 </head>
@@ -24,7 +26,9 @@
     <nav>
         <div id="navigation" class="navigation"></div>
     </nav>
-        <h1> Homepage </h1>
+    <section>
+         <div id="banner" class="banner"></div>
+    </section>
         
     <script src="../modules/bootstrap-5.3.0/js/bootstrap.min.js"></script>
     <script src="../modules/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
