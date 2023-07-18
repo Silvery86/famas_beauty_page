@@ -37,3 +37,9 @@ body {
     border-bottom: 1px solid gold ;
 }
 
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+

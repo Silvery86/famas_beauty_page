@@ -57,32 +57,40 @@
     color: var(--primary);
 }
 
+.smartchoice__detail {
+    margin-top: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.smartchoice__button {
+    visibility: hidden;
+    transition: 0.3s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .smartchoice__single {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+
+    &:hover .smartchoice__button {
+        visibility: visible;
+    }
+
+    &:hover .smartchoice__detail {
+        margin-top: 10px;
+    }
 }
 
 .smartchoice__heading h3 {
     text-transform: capitalize;
     font-size: 18px;
     margin: 10px 0
-}
-
-.smartchoice__detail {
-    margin-top: 20px;
-    text-align: center;
-    transition: 0.5s;
-}
-
-.smartchoice__button {
-    visibility: hidden;
-    transition: 0.5s;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .smartchoice__button a {
@@ -95,22 +103,145 @@
     border-radius: 20px;
     padding: 10px 20px;
     transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--golden);
+        border: none;
+    }
 }
 
 .smartchoice__button p{
     margin: 0;
 }
 
-.smartchoice__single:hover .smartchoice__button {
-    visibility: visible;
+
+
+
+/* PHILOSOPHY SECTION */
+
+
+
+.philosophy__background {
+    background-image: url(../assets/images/philosophy/background_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    height: 200%;
+    position: relative;
+}
+
+.philosophy__icon img {
+    position: absolute;
+    top: -7px;
+    left: calc( 50% - 16px );
+}
+.philosophy__icon img::after {
+    content: "";
+    clear: both;
+}
+
+.philosophy__container {
+    padding: 70px 0;
+}
+
+.philosophy__picture img{
+    box-shadow: -8px 8px rgba(132, 132, 132, 0.418);
+}
+
+.philosophy__content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.philosophy__title h3{
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.philosophy__image {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0;
     
 }
 
-.smartchoice__single:hover .smartchoice__detail {
-    margin-top: 10px;
+.image__icon {
+    padding: 10px;
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    &:hover {
+        background-color: var(--golden);
+        border: 1px solid var(--white);
+    }
+
+    &:hover img{
+        transform: translateY(-37px);   
+    }
+
+    &:active {
+        border: 1px solid var(--golden);
+        
+    }
 }
 
-.smartchoice__button a:hover {
-    background-color: var(--golden);
-    border: none;
+.image__icon img {
+    width: 100%;
+    height: auto;
+    transition: 0.3s;
+}
+
+.philosophy__detail {
+    text-align: center;
+    margin: 20px 0;
+
+    & .image__content {
+        display: none;
+        transition: 1s;
+        color:  var(--white);
+
+        & h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        & p {
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+    }
+
+    & .active {
+        display: block;
+        animation: rotate-div 0.5s linear;
+    }
+}
+
+
+@keyframes rotate-div {
+    0% {
+    transform:  rotateX(360deg);
+   
+    } 50% {
+    transform:  rotateX(280deg);
+    
+    } 100% {
+    transform:  rotateX(360deg);
+       
+    }
 }
