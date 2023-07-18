@@ -135,11 +135,13 @@
     position: absolute;
     top: -7px;
     left: calc( 50% - 16px );
+
+    &::after {
+        content: "";
+        clear: both;
+    }
 }
-.philosophy__icon img::after {
-    content: "";
-    clear: both;
-}
+
 
 .philosophy__container {
     padding: 70px 0;
@@ -235,10 +237,10 @@
 
 @keyframes rotate-div {
     0% {
-    transform:  rotateX(360deg);
+    transform:  rotateX(270deg);
    
     } 50% {
-    transform:  rotateX(280deg);
+    transform:  rotateX(340deg);
     
     } 100% {
     transform:  rotateX(360deg);
