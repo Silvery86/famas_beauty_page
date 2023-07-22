@@ -1,27 +1,29 @@
-var activeContentNumber = null;
+// Mouse over text replace
 
-function showContent(contentNumber) {
-  if (activeContentNumber !== null) {
-    hideContent(activeContentNumber);
-  }
+// Philosophy section
+document.addEventListener("DOMContentLoaded", function () {  
+  setTimeout(() => {
+    var headingContent = document.querySelectorAll('.philosophy__content .philosophy__image .image__icon');
+    var textContent = document.querySelector('.philosophy__content .philosophy__detail .image__content-replace');
+    console.log(headingContent);
+    headingContent.forEach(function (element) {
+        var hiddenContent = element.querySelector('.image__content');
+        
+        element.addEventListener("mouseenter", function () {
+            setTimeout(() => {
+              textContent.classList.remove("active");
+            }, 500);
+            var textHtml = hiddenContent.innerHTML;
+            console.log(textHtml);
+            textContent.classList.add("active");
+            textContent.innerHTML = textHtml; // Show the hidden content in text__content
+        });
+    });
+  }, 1000);
+});
 
-  var content = document.getElementById("content" + contentNumber);
-  content.classList.add("active");  
-  activeContentNumber = contentNumber;
-  var icon = document.getElementById("icon" + contentNumber);
-  icon.classList.add("active");
-}
-
-function hideContent(contentNumber) {
-  var content = document.getElementById("content" + contentNumber);
-  content.classList.remove("active");
-  var icon = document.getElementById("icon" + contentNumber);
-  icon.classList.remove("active");
-}
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  
+// Skinreborn section
+document.addEventListener("DOMContentLoaded", function () {  
   setTimeout(() => {
     var headingContent = document.querySelectorAll('.skinreborn__map .heading__content');
     var textContent = document.querySelector('.skinreborn__map .skinreborn_text_replace');
@@ -37,10 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
             textContent.classList.add("active");
             textContent.innerHTML = textHtml; // Show the hidden content in text__content
         });
-
-       
-
-        
     });
   }, 1000);
 });

@@ -156,15 +156,16 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+
+    & .philosophy__title h3{
+        color: var(--white);
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
 }
 
-.philosophy__title h3{
-    color: var(--white);
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
 
 .philosophy__image {
     width: 100%;
@@ -173,44 +174,46 @@
     justify-content: space-evenly;
     align-items: center;
     margin: 10px 0;
+
+    .image__icon {
+        padding: 10px;
+        cursor: pointer;
+        width: 56px;
+        height: 56px;
+        overflow: hidden;
+        border-radius: 50%;
     
-}
+        &:hover {
+            background-color: var(--golden);
+            border: 1px solid var(--white);
+        }
+    
+        &:hover img{
+            transform: translateY(-37px);   
+        }
+    
+        &:active {
+            border: 1px solid var(--golden);
+            
+        }
 
-.image__icon {
-    padding: 10px;
-    cursor: pointer;
-    width: 56px;
-    height: 56px;
-    overflow: hidden;
-    border-radius: 50%;
+        & img {
+            width: 100%;
+            height: auto;
+            transition: 0.3s;
+        }
 
-    &:hover {
-        background-color: var(--golden);
-        border: 1px solid var(--white);
-    }
-
-    &:hover img{
-        transform: translateY(-37px);   
-    }
-
-    &:active {
-        border: 1px solid var(--golden);
         
     }
-}
 
-.image__icon img {
-    width: 100%;
-    height: auto;
-    transition: 0.3s;
 }
 
 .philosophy__detail {
     text-align: center;
     margin: 20px 0;
 
-    & .image__content {
-        display: none;
+    & .image__content-replace {
+        display: block;
         transition: 1s;
         color:  var(--white);
 
