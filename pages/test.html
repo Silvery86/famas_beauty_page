@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pure JavaScript Example</title>
+    <style>
+        /* Initially hide the hidden content */
+        .hidden__content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="skinreborn__map">
+        <div class="heading__content">
+            <h1>Content 1</h1>
+            <p>Heading Content 1</p>
+            <div class="hidden__content">
+                <h1>Heading 1</h1>
+                <p>This is the hidden content for heading 1.</p>
+                <a>Link 1</a>
+            </div>
+        </div>
+        <div class="heading__content">
+            <h1>Content 2</h1>
+            <p>Heading Content 2</p>
+            <div class="hidden__content">
+                <h1>Heading 2</h1>
+                <p>This is the hidden content for heading 2.</p>
+                <a>Link 2</a>
+            </div>
+        </div>
+        <!-- Add more heading__content elements if needed -->
+        <div class="skinreborn_text_replace"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var headingContent = document.querySelectorAll('.skinreborn__map .heading__content');
+            var textContent = document.querySelector('.skinreborn__map .skinreborn_text_replace');
+            console.log(headingContent);
+            headingContent.forEach(function (element) {
+                var hiddenContent = element.querySelector('.hidden__content');
+
+                element.addEventListener("mouseenter", function () {
+                    var textHtml = hiddenContent.innerHTML;
+                    textContent.innerHTML = textHtml; // Show the hidden content in text__content
+                });
+
+                
+            });
+        });
+    </script>
+</body>
+</html>

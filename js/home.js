@@ -19,3 +19,28 @@ function hideContent(contentNumber) {
   icon.classList.remove("active");
 }
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  
+  setTimeout(() => {
+    var headingContent = document.querySelectorAll('.skinreborn__map .heading__content');
+    var textContent = document.querySelector('.skinreborn__map .skinreborn_text_replace');
+    headingContent.forEach(function (element) {
+        var hiddenContent = element.querySelector('.hidden__content');
+        
+        element.addEventListener("mouseenter", function () {
+            setTimeout(() => {
+              textContent.classList.remove("active");
+            }, 500);
+            var textHtml = hiddenContent.innerHTML;
+            console.log(textHtml);
+            textContent.classList.add("active");
+            textContent.innerHTML = textHtml; // Show the hidden content in text__content
+        });
+
+       
+
+        
+    });
+  }, 1000);
+});

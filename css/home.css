@@ -234,6 +234,211 @@
     }
 }
 
+/* SKIN REBORN SECTION */
+
+.skinreborn__background {
+    background-image: url(../assets/images/skinreborn/bg-caro.jpg);    
+    background-repeat: no-repeat;
+    height: 686px;
+    position: relative;
+    padding: 50px 0;    
+}
+
+.skinreborn__container {
+    padding: 50px 0;
+}
+
+.skinreborn__step {
+    display: flex;
+    flex-flow: column nowrap;
+    
+    & .skinreborn__image {
+        width: 100%;
+        padding-right: 50px;
+    }
+
+    & ul {
+        width: 100%;
+        margin: 20px 0;
+        padding: 0 50px 0 0 ;
+    }
+
+    & ul > li {
+        position: relative;
+        width: 80%;
+        margin: 20px 0;
+        padding: 20px 20px;
+
+        list-style: none;
+        color: var(--white);
+        font-weight: 700;
+        background-color: var(--red);
+        text-transform: uppercase;
+        text-align: center;
+
+        
+        &::before{
+            content: "";
+            background-color: var(--white);
+            position: absolute;
+            width: 10px;
+            height: 4px;
+            top: 27px;
+            left: 12px;
+        }
+
+        &::after{
+            content: "";
+            background-color: var(--white);
+            position: absolute;
+            width: 10px;
+            height: 4px;
+            top: 27px;
+            right: 12px;
+        }
+        
+    }
+}
+
+.skinreborn__map {
+    background: url(../assets/images/skinreborn/ico-char-skin.png) no-repeat center 50px;
+    position: relative;
+    width: 636px;
+    height: 500px;
+    padding-top: 50px;
+
+
+        & h5 {
+            font-size: 16px;
+            color: var(--primary);
+            text-transform: capitalize;
+        }
+
+        & h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--red);
+            text-transform: uppercase;
+        }
+
+        & .heading__content {
+            width: 120px;
+            height: 50px;
+            text-align: center;
+            display: block;
+            position: absolute;
+
+            & .hidden__content {
+                display: none;
+            }
+        }
+
+        & .heading__content:nth-child(1) {
+            left: 8%;
+            top: 76%;
+        }
+
+        & .heading__content:nth-child(2) {
+            left: 0%;
+            top: 59%;
+        }
+
+        & .heading__content:nth-child(3) {
+            left: 1%;
+            top: 38%;
+        }
+
+        & .heading__content:nth-child(4) {
+            left: 9%;
+            top: 17%;
+        }
+
+        & .heading__content:nth-child(5) {
+            left: 40%;
+            top: -2%;
+        }
+
+        & .heading__content:nth-child(6) {
+            left: 71%;
+            top: 17%;
+        }
+
+        & .heading__content:nth-child(7) {
+            left: 82%;
+            top: 38%;
+        }
+
+        & .heading__content:nth-child(8) {
+            left: 81%;
+            top: 59%;
+        }
+
+        & .heading__content:nth-child(9) {
+            left: 74%;
+            top: 76%;
+        }
+        
+        & .skinreborn_text_replace {
+            position: absolute;
+            top: 31%;
+            left: 34%;
+            width: 200px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            
+            & h5 {
+                color: var(--white);
+                font-weight: 700;
+            }
+
+            & h3 {
+                color: var(--white);
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            & p {
+                color: var(--white);
+                text-align: center;
+            }
+
+            & a {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+                align-items: baseline;
+                padding: 10px 15px;
+                width: 60%;
+                background-color: var(--white);
+                border-radius: 20px;
+                
+
+                & p {
+                    color: var(--primary);
+                    margin: 0;
+                    
+                }
+
+                &:hover {
+                    background-color: var(--golden);
+                }
+            }
+
+            
+        }
+
+        & .active {
+            animation: rotate-div 0.5s linear;
+        }
+         
+          
+           
+}
+
+
+
 
 @keyframes rotate-div {
     0% {
