@@ -416,7 +416,7 @@
                 
 
                 & p {
-                    color: var(--primary);
+                    color: var(--gray);
                     margin: 0;
                     
                 }
@@ -432,11 +432,26 @@
         & .active {
             animation: rotate-div 0.5s linear;
         }
-         
-          
-           
 }
 
+.skinreborn__title {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    & h3 {
+        color: var(--red);
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    & p {
+        color: var(--gray);
+        font-size: 16px;
+    }
+}
 
 
 
