@@ -819,3 +819,166 @@
     }
 }
 
+/* STORY SECTION */
+
+.story__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    & .story__heading {
+        width: 100%;
+        text-align: center;
+        padding: 40px;
+
+        & h3 {
+            color: var(--black);
+            font-weight: 700;
+        }
+
+        & p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+    }
+
+    & .story__content {
+        position: relative;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 80px);
+        height: max-content;
+        padding: 30px 40px;
+        margin: 0 40px ;
+        background-color: var(--light-gray);
+        
+        & .content__carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            & .carousel__hash-left {
+                position: absolute;
+                top: 69%;
+                left: 0%;
+                width: 100px;
+                height: 100px;
+                background-image: url(../assets/images/story/ico-nhay-left.png);
+            }
+
+            & .carousel__hash-right {
+                position: absolute;
+                top: 80%;
+                right: 0%;
+                width: 100px;
+                height: 100px;
+                background-image: url(../assets/images/story/ico-nhay-right.png);
+            }
+
+            & .carousel__item {
+                margin-top: 20px;
+                margin-bottom: 60px;
+
+                & h3 {
+                    margin: 20px 0;
+                    color: var(--primary);
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+
+                & p {
+                    color: var(--gray);
+                    text-align: center;
+                }
+
+                & h5 {
+                    color: var(--primary);
+                    font-size: 16px;
+                }
+            }
+
+            & .carousel__btn-left {
+                position: absolute;
+                top: 95%;
+                left: 40%;
+                
+                height: 40px;
+                width: 40px;
+                border: 1px solid var(--gray);
+                color: var(--primary);
+                font-size: 16px;
+
+                &:hover {
+                    color: var(--white);
+                    background-color: var(--primary);
+                }
+            }
+
+            & .carousel__btn-right {
+                position: absolute;
+                top: 95%;
+                left: 50%;
+                
+                height: 40px;
+                width: 40px;
+                border: 1px solid var(--gray);
+                color: var(--primary);
+                font-size: 16px;
+
+                &:hover {
+                    color: var(--white);
+                    background-color: var(--primary);
+                }
+            }
+
+
+        }
+    }
+
+    & .story__form {
+        width: calc(100% - 20px);
+        background-color: var(--light-gray);
+        margin-right: 20px;
+
+        & .form__image img {
+            width: 100%;
+        }
+
+        & .form__input {
+            display: flex;
+            flex-flow: column nowrap;
+            padding: 40px;
+
+            & input {
+                padding: 20px 10px;
+                margin: 10px 0;
+                border: none;
+                border-radius: 5px;
+                box-shadow: -5px -5px var(--light-gray);
+            }
+
+            & button {
+                width: 70%;
+                align-self: center;
+                margin-top:10px;
+                padding: 20px 30px;
+                background-color: var(--golden);
+                border: none;
+                border-radius: 30px;
+                font-size: 24px;
+                color: var(--primary);
+                font-weight: 700;
+                text-transform: uppercase;
+
+                &:hover {
+                    background-color: var(--primary);
+                    color: var(--white);
+                }
+            }
+        }
+    }
+} 

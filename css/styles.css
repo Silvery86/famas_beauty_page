@@ -1,10 +1,11 @@
 :root {
     --white: #ffff;
-    --black: #0000;
+    --black: #424242;
     --primary: #243168;
     --gray : #727272;
     --golden: #feda58;
     --red: #a42e2e;
+    --light-gray: #f5eeee;
    
 
     --container-gutter: 20px;
