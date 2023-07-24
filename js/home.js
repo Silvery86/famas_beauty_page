@@ -54,11 +54,11 @@ document.addEventListener("DOMContentLoaded", function () {
         
         element.addEventListener("click", function () {
             setTimeout(() => {
-              textContent.classList.remove("active");
+              textContent.classList.remove("focus");
             }, 500);
             var textHtml = hiddenContent.innerHTML;
             console.log(textHtml);
-            textContent.classList.add("active");
+            textContent.classList.add("focus");
             textContent.innerHTML = textHtml; // Show the hidden content in text__content
         });
     });
