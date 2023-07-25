@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
     var headingContent = document.querySelectorAll('.philosophy__content .philosophy__image .image__icon');
     var textContent = document.querySelector('.philosophy__content .philosophy__detail .image__content-replace');
-    console.log(headingContent);
+   
     headingContent.forEach(function (element) {
         var hiddenContent = element.querySelector('.image__content');
         
@@ -63,4 +63,26 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
   }, 1000);
+});
+
+// Fixed navbar when scroll down
+
+document.addEventListener('DOMContentLoaded', function () {
+  var shrinkHeader = 199;
+  window.addEventListener('scroll', function () {
+      var scroll = getCurrentScroll();
+      console.log(scroll);
+      console.log(scroll > shrinkHeader);
+      if (scroll > shrinkHeader) {
+          document.getElementById('navigation').classList.add('fixed');
+         
+      } else {
+          document.getElementById('navigation').classList.remove('fixed');
+          
+      }
+  });
+
+  function getCurrentScroll() {
+      return window.scrollY || document.documentElement.scrollTop;
+  }
 });
