@@ -26,6 +26,8 @@
 
     & .contactbar__container {
         display: block;
+        animation: fade-in-bottom linear 0.5s;
+        
     }
 }
 
@@ -274,5 +276,19 @@
     top:50px;
     
        
+    }
+}
+
+@keyframes fade-in-bottom {
+    0% {
+    bottom: -50px;
+    } 
+
+    50% {
+    bottom: -25px;  
+    } 
+    
+    100% {
+    bottom:0px;          
     }
 }
