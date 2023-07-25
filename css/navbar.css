@@ -1,5 +1,128 @@
-.nav__menu {
+.nav__menu {    
     width: 100%;
+    
+}
+
+.fixed {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    z-index: 99;
+    animation: fade-in-top linear 0.5s;
+
+
+    & .dropdown__title {
+        color: var(--primary);
+        font-size: 16px;
+    }
+
+    & .nav__logo-hidden {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .contactbar__container {
+        display: block;
+    }
+}
+
+.contactbar__container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 50px;
+    background-color: #2430688b;
+    border-bottom: 3px solid var(--golden);
+    z-index: 99;
+
+    & .contactbar__heading {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        float: left;
+        justify-content: center;
+        align-items: center;
+
+        & h5 {
+            margin: 0;
+            font-size: 14px;
+            color: var(--white);
+        }
+    }
+
+    & .contactbar__hotline {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 301px;
+        background: url(../assets/images/foo-phone.png) no-repeat center bottom;
+        background-position: top;
+        
+        & .hotline__icon {
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+
+        & .hotline__detail {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 3px;
+
+            & h2 {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            & p {
+                font-size: 14px;
+                text-transform: capitalize;
+            }
+        }       
+    }
+
+    & .contactbar__chatbox {
+        display: flex;
+        flex-flow: row nowrap;
+        float: right;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin-bottom: 2px;
+        border-radius: 5px 5px 0 0;
+        background-color: var(--primary);
+        height: 47px;
+
+        & h3 {
+            padding-left: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--golden);
+            text-transform: uppercase;
+           
+        }
+
+    }
+}
+
+.nav__logo-hidden {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: none;
+    text-align: center;
+    background-color: var(--primary);
+
     
 }
 
@@ -136,4 +259,20 @@
         }
     }
 
+}
+
+@keyframes fade-in-top {
+    0% {
+    top: -100%;
+    
+   
+    } 50% {
+    top: 25px;
+    
+    
+    } 100% {
+    top:50px;
+    
+       
+    }
 }
