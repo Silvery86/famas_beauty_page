@@ -1,0 +1,62 @@
+@media only screen and (max-width: 1200px){
+    
+    .dropdown__title:nth-child(6) {
+        display: none;
+    }
+
+    .dropdown__title:nth-child(7) {
+        display: none;
+    }
+
+    .dropdown__title:nth-child(8) {
+        display: none;
+    }
+
+    .megamenu {
+        position: absolute;
+        left: -100%;
+    }
+
+    .contactbar__container .contactbar__chatbox {
+        width: 80%;
+    }
+
+    .skinreborn__step .skinreborn__image {
+        padding: 0;
+    }
+
+    .skinreborn__step ul {
+        padding: 0;
+
+        & li {
+            width: 100%;
+        }
+    }
+
+    .story {
+
+        & .story__form {
+            width: 100%;
+            margin: 10px 0;
+
+            & .form__input {
+                padding: 15px;
+            }
+
+            & .form__input button {
+                width: 90%;
+            }
+        }
+        
+
+        & .story__content {
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+ 
+}
+
+@media only screen and (max-width: 1024px){
+    
+}
