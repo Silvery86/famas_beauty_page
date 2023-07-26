@@ -9,6 +9,7 @@
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/header.css" rel="stylesheet">
     <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/mobinav.css" rel="stylesheet">
     <link href="../css/home.css" rel="stylesheet">
     <link href="../css/footer.css" rel="stylesheet">
     <link href="../css/resposive.css" rel="stylesheet">
@@ -17,6 +18,7 @@
         $(function(){
           $("#header").load("./default-modules/header.html");
           $("#navigation").load("./default-modules/navigation.html");
+          $("#mobi_nav").load("./default-modules/mobi_nav.html");
           $("#banner").load("./home/banner.html");
           $("#smartchoice").load("./home/smartchoice.html");
           $("#philosophy").load("./home/philosophy.html");
@@ -29,38 +31,42 @@
     </script>  
 </head>
 <body>
+    <div id="main-content">
     <header>
         <div id="header" class="header"></div>
     </header>
     <nav>
         <div id="navigation" class="navigation"></div>
+        <div id="mobi_nav" class="mobi_nav"></div>
     </nav>
-    <section>
-         <div id="banner" class="banner"></div>
-    </section>
-    <section>
-        <div id="smartchoice" class="smartchoice"></div>
-    </section>
-    <section>
-        <div id="philosophy" class="philosophy"></div>
-    </section>
-    <section>
-        <div id="skinreborn" class="skinreborn"></div>
-    </section>
-    <section>
-        <div id="gallery" class="gallery"></div>
-    </section>
-    <section>
-        <div id="story" class="story"></div>
-    </section>
-    <section>
-        <div id="news" class="news"></div>
-    </section>
-    <footer>
-        <div id="footer" class="footer"></div>
-    </footer>
+        <section>
+             <div id="banner" class="banner"></div>
+        </section>
+        <section>
+            <div id="smartchoice" class="smartchoice"></div>
+        </section>
+        <section>
+            <div id="philosophy" class="philosophy"></div>
+        </section>
+        <section>
+            <div id="skinreborn" class="skinreborn"></div>
+        </section>
+        <section>
+            <div id="gallery" class="gallery"></div>
+        </section>
+        <section>
+            <div id="story" class="story"></div>
+        </section>
+        <section>
+            <div id="news" class="news"></div>
+        </section>
+        <footer>
+            <div id="footer" class="footer"></div>
+        </footer>
+    </div>
     <script src="../modules/bootstrap-5.3.0/js/bootstrap.min.js"></script>
     <script src="../modules/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="../js/home.js"></script>
+    <script src="../js/mobinav.js"></script>
 </body>
 </html>

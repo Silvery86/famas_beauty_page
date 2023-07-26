@@ -263,6 +263,10 @@
 
 }
 
+.mobi_nav {
+    display: none;
+}
+
 @keyframes fade-in-top {
     0% {
     top: -100%;

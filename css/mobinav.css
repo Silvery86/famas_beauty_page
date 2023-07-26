@@ -1,0 +1,145 @@
+
+
+.nav__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    display: none;
+    animation: fadeIn linear 0.3s;
+    z-index: 999;
+}
+
+.menu__icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.mobinav__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.mobinav__option {
+    display: flex;
+    float: right;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    margin-right: 20px;
+
+    & .mobinav__language {
+        width: 50px;
+    }
+
+    & .mobinav__searchbox {
+        width: 50px;
+    }
+
+    & i {
+        color: var(--gray);
+        font-size: 20px;
+    }
+}
+
+.nav__mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 440px;
+    max-width: 100%;
+    background-color: var(--primary);
+    transform: translateX(-100%);
+    transition: transform linear 0.3s;
+    
+
+    & .menu__heading {
+        padding: 10px 0;
+        text-align: center;
+
+        & h2 {
+            color: var(--white);
+            font-size: 16px;
+        }
+    }
+
+    & .menu__mobile{
+        display: flex;
+        flex-direction: column;
+        padding: 0;       
+        width: 100%;
+    
+
+    & .menu__title{
+        text-align: left;
+        width: 100%;
+        border-bottom: 1px var(--gray) solid;
+        padding: 10px;
+
+        & a {
+            width: 100%;
+            padding: 10px;
+            color: var(--white);
+            text-transform: capitalize;
+            font-size: 16px;
+            text-decoration: none;
+            
+        }
+    }
+
+    & li:first-child a{
+        border: none;
+    }
+
+    }
+}
+.nav__input{
+    display: none;
+}
+
+.searchbox__content{
+    position: absolute;
+    left: 0;
+    width: 900px;
+    
+}
+
+.nav__input:checked ~ #main-content{
+    transform: translateX(320px) !important;
+}
+.nav__input:checked ~ .nav__overlay{
+    display: block;
+}
+
+.dropdown-menu.show .nav__overlay{
+    left:440px;
+    display: block;
+}
+
+
+#main-content{
+    transition: transform linear 0.3s;
+}
+#main-content.slide{
+    transform: translateX(440px);
+    
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

@@ -32,6 +32,17 @@
             width: 100%;
         }
     }
+    .gallery__container{
+
+        & .gallery__content {
+            width: 100%;
+            height: 150px;
+        }
+
+        & .gallery__content:nth-child(3) {
+            height: 300px;
+        }
+    }
 
     .story {
 
@@ -58,5 +69,121 @@
 }
 
 @media only screen and (max-width: 1024px){
+    .header {
+        display: none;
+    }
+
+    .navigation {
+        
+        & .nav__menu {
+            display: none;
+        }
+
+        
+
+        & .contactbar__container {
+            display: block;
+        }
+    }
+
+    .mobi_nav {
+        display: block;
+    }
+
+    .gallery__container{
+        grid-template-columns: auto auto auto auto auto auto;
+        & .gallery__content {
+            width: 100%;
+            height: 150px;
+        }
+
+        & .gallery__content:nth-child(3) {
+            height: 300px;
+        }
     
+    }
+
+    .skinreborn{
+        margin-bottom: 400px;
+    }
+    
+    .body__detail {
+        & .news__link {
+        
+            & h5::after {          
+                right: 33%;
+            }
+    
+            & h5::before {
+             
+                left: 33%;
+            }
+        }
+    }
+    .contactbar__container {
+    
+        & .contactbar__heading {
+            display: none;
+        }
+    
+        
+    }
 }
+
+@media only screen and (max-width: 768px){
+
+    .container {
+        max-width: 90%;
+    }
+
+    .banner__button {
+        top: 76%;
+        left: 53%;
+
+        & button {
+            font-size: 15px;
+            padding: 10px 20px;
+        }
+    }
+
+    .smartchoice_title h1 {
+        font-size: 34px;
+    }
+
+    .smartchoice__content p {
+        font-size: 14px;
+    }
+    .philosophy__background {
+        background-size: cover;
+    }
+
+    .philosophy__picture{
+
+        margin-bottom: 30px;
+    
+        & img {
+            width: 100%;
+            margin: 0;
+        }
+    }
+    .skinreborn {
+
+        & .skinreborn__image {
+           display: flex;
+           justify-content: center;
+        }
+    }
+
+    .gallery__container{
+        grid-template-columns: auto auto auto auto auto;
+        & .gallery__content {
+            width: 100%;
+            height: 150px;
+        }
+    }
+
+    
+
+        
+}
+
