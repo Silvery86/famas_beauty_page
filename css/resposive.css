@@ -79,8 +79,6 @@
             display: none;
         }
 
-        
-
         & .contactbar__container {
             display: block;
         }
@@ -181,9 +179,174 @@
             height: 150px;
         }
     }
-
-    
-
-        
 }
 
+@media only screen and (max-width: 480px) {
+    .smartchoice_title h1 {
+        font-size: 22px;
+    }
+
+    .navigation {
+       display: none;
+    }
+
+    .skinreborn__map {
+        background: url(../assets/images/ico-char-skin-2.png) no-repeat 50px 100px;
+        width: 100%;
+        margin-bottom: 100px;
+
+        & .skinreborn_text_replace {
+
+            left: 23%;
+            width: 60%;
+        }
+
+        & .heading__content:nth-child(1) {
+            top: 85%;
+            left: 3%;
+        }
+        
+        & .heading__content:nth-child(2) {
+            top: 100%;
+            left: 17%;
+        }
+
+        & .heading__content:nth-child(3) {
+            top: 85%;
+            left: 73%;
+        }
+
+        & .heading__content:nth-child(4) {
+            top: 100%;
+            left: 53%;
+        }
+
+        & .heading__content:nth-child(5) {
+            top: 13%;
+            left: -4%;
+        }
+
+        & .heading__content:nth-child(6) {
+            top: -2%;
+            left: 10%;
+        }
+
+        & .heading__content:nth-child(7) {
+            top: 9%;
+            left: 36%;
+        }
+
+        & .heading__content:nth-child(8) {
+            top: -2%;
+            left: 64%;
+        }
+
+        & .heading__content:nth-child(9) {
+            top: 13%;
+            left: 76%;
+        }
+
+    }
+    
+    .gallery__container{
+        grid-template-columns: auto auto auto;
+        & .gallery__content {
+            width: 100%;
+            height: 150px;
+        }
+
+        & .gallery__content:nth-child(3) {
+            grid-row: 2 / 4;
+            grid-column: 1 / 3 ;
+        }
+    }
+
+    .body__detail {
+        & .news__link {
+        
+            & h5::after {          
+                right: 20%;
+            }
+    
+            & h5::before {
+             
+                left: 20%;
+            }
+        }
+    }
+
+    .footer__sitemap {
+        display: none;
+    }
+
+    .about__logo {
+        margin-bottom: 20px;
+    }
+
+    .about__title {
+        
+
+        & h1 {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+
+    .about__address {
+        & h5 {
+            text-align: center;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+
+    .footer__digital {
+
+        & .row {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        & p {
+            text-align: center;
+        }
+
+        & .digital__socialmedia {
+            margin-bottom: 10px;
+        }
+    }
+
+    .mobile__contact {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: inherit;
+        width: 100%;
+        height: 50px;
+        background-color: var(--primary);
+        z-index: 999;
+
+        & .contact__phone {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        & .contact__message {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        & i {
+            color: var(--golden);
+        }
+    }
+}
