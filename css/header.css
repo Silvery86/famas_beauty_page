@@ -6,14 +6,45 @@
     padding: 30px 0;
 
     & .header__hotline {
+        position: relative;
         display: flex;
         flex-flow: row;
         gap: 5px;
+        
 
-        & a {
+        & p {
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        & p:nth-child(1):hover:before {
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            display: block;
+        }
+
+        & p:nth-child(2):hover::before {
+            position: absolute;
+            top: 22px;
+            left: 15px;
+            display: block;
+        }
+
+        & p::before {
+            content: "gọi ngay!";
+            display: none;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: capitalize;
             text-decoration: none;
             color: var(--primary);
+            background-color: var(--golden);
+            padding: 5px 5px;
+            border-radius: 10px;
         }
+
+        
 
         & span {
             color: var(--gray);
