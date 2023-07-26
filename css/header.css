@@ -83,8 +83,16 @@
         flex-flow: row nowrap;
         justify-content: space-evenly;
         align-items: center;
-        color: var(--gray);
-        font-size: 15px;
+
+        & i {
+            color: var(--gray);
+            font-size: 15px;
+        }
+
+        & i:hover {
+            color: var(--black);
+        }
+        
     }
 
     & .header__smallnav {
