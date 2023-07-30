@@ -8,39 +8,41 @@
     & .header__hotline {
         position: relative;
         display: flex;
-        flex-flow: row;
+        flex-flow: row nowrap;
         gap: 5px;
         
 
         & p {
+            margin-bottom: 8px;
             color: var(--primary);
             cursor: pointer;
         }
 
         & p:nth-child(1):hover:before {
             position: absolute;
-            top: -10px;
-            left: 15px;
+            top: -4px;
+            left: 8px;
             display: block;
         }
 
         & p:nth-child(2):hover::before {
             position: absolute;
-            top: 22px;
-            left: 15px;
+            top: 23px;
+            left: 8px;
             display: block;
         }
 
         & p::before {
             content: "gọi ngay!";
             display: none;
-            font-size: 16px;
+            
+            font-size: 14px;
             font-weight: 700;
             text-transform: capitalize;
             text-decoration: none;
             color: var(--primary);
             background-color: var(--golden);
-            padding: 5px 5px;
+            padding: 2px 15px;
             border-radius: 10px;
         }
 
@@ -83,41 +85,53 @@
     width: 100%;
     height: 100%;
     background-image: url(../assets/images/bg-header.png);
-    background-size: 55%;
+    background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.header__right {
-    display: flex;
-    float: right;
+.header__right {    
+    display: flex;    
     flex-flow: column nowrap;
-    justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
     gap:10px;
     padding: 30px 0;
 
     & .header__language {
+        width: 150px;
+        float: right;
         padding: 0;
-        margin-bottom: 10px;
         border: 1px solid var(--gray);
+        
+        & .language__btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+            width: 100%;
+            padding: 5px 10px;
+            text-decoration: none;
+            font-size: 14px;
+            color: var(--primary);
+        }
 
         & .show span{
+            font-size: 14px;
             color: var(--primary);
         }
     }
 
     & .header__socialmedia {
         width: 100%;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
-        align-items: center;
+        
 
         & i {
+            float: right;
+            margin: 5px 0px 0 20px;
             color: var(--gray);
-            font-size: 15px;
+            font-size: 16px;
         }
 
         & i:hover {
@@ -127,36 +141,29 @@
     }
 
     & .header__smallnav {
-        width: 100%;
+        padding: 0;
+        float: right;
+        list-style: none;
 
-        & ul {
-            width: 100%;
-            padding: 0;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
-            list-style: none;
+        & a {
+            position: relative;
+            margin: 5px 0 0 20px;
+            text-align: center;
         }
 
-        & li {
-            position: relative;
-            width: 100%;
-            text-align: center;
+        & a::after {
+            position: absolute;
+            right: -12px;
+            content: "|";
+            clear: both;
+        }
+
+        & a:last-child::after {
+            content: "";
+            clear: both;
         }
     }
 }
 
 
-.header__smallnav ul > li::after {
-    position: absolute;
-    right: 2px;
-    content: "|";
-    clear: both;
-}
-
-.header__smallnav ul > li:last-child::after {
-    content: "";
-    clear: both;
-}
 
