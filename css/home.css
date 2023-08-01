@@ -97,7 +97,8 @@
 
 .smartchoice_title h1 {
     font-size: 48px;
-    font-weight: 600;
+    font-weight: 700;
+    
     text-transform: uppercase;
     color: var(--primary);
     margin: 10px 0;
@@ -166,6 +167,21 @@
     margin: 0;
 }
 
+@media only screen and (max-width: 1200px){}
+
+@media only screen and (max-width: 1024px){}
+
+@media only screen and (max-width: 768px) {
+    .smartchoice_title h1 {
+        font-size: 34px;
+    }
+
+    .smartchoice__content p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) {}
 
 
 
