@@ -337,11 +337,9 @@
 /* SKIN REBORN SECTION */
 
 .skinreborn__background {
-    background-image: url(../assets/images/skinreborn/bg-caro.jpg);    
-    background-repeat: no-repeat;
-    height: 686px;
     position: relative;
-    padding: 50px 0;    
+    background-image: url(../assets/images/skinreborn/bg-caro.jpg);    
+    background-repeat: repeat;          
 }
 
 .skinreborn__container {
@@ -550,6 +548,161 @@
     & p {
         color: var(--gray);
         font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .skinreborn__step .skinreborn__image {
+        padding: 0;
+    }
+
+    .skinreborn__step ul {
+        padding: 0;
+
+        & li {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .skinreborn{
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .skinreborn {
+
+        & .skinreborn__image {
+           display: flex;
+           justify-content: center;
+        }      
+    }
+
+    .skinreborn__background {
+        position: relative;        
+            
+    }
+
+    .skinreborn__map {
+        width: 416px;
+        margin: 50px auto 60px;
+        background: url(../assets/images/skinreborn/ico-char-skin.png) no-repeat center center;
+      
+        & .skinreborn_text_replace {
+            left: 26%;
+            
+        }
+
+        & .heading__content:nth-child(1) {
+            top: 79%;
+            left: -13%;
+        }
+        
+        & .heading__content:nth-child(2) {
+            top: 61%;
+            left: -21%;
+        }
+
+        & .heading__content:nth-child(3) {
+            top: 41%;
+            left: -23%;
+        }
+
+        & .heading__content:nth-child(4) {
+            top: 20%;
+            left: -9%;
+        }
+
+        & .heading__content:nth-child(5) {
+            top: 2%;
+            left: 34%;
+        }
+
+        & .heading__content:nth-child(6) {
+            top: 20%;
+            left: 80%;
+        }
+
+        & .heading__content:nth-child(7) {
+            top: 41%;
+            left: 95%;
+        }
+
+        & .heading__content:nth-child(8) {
+            top: 61%;
+            left: 92%;
+        }
+
+        & .heading__content:nth-child(9) {
+            top: 79%;
+            left: 84%;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .skinreborn__map {
+        width: 330px;
+        background: url(../assets/images/ico-char-skin-2.png) no-repeat center center;
+        margin: 50px auto 100px;
+      
+        & .skinreborn_text_replace {
+            top: 30%;
+            left: 20%;
+            width: 60%;
+        }
+
+        & .heading__content:nth-child(1) {
+            top: 85%;
+            left: -2%;
+        }
+        
+        & .heading__content:nth-child(2) {
+            top: 100%;
+            left: 15%;
+        }
+
+        & .heading__content:nth-child(3) {
+            top: 85%;
+            left: 70%;
+        }
+
+        & .heading__content:nth-child(4) {
+            top: 100%;
+            left: 48%;
+        }
+
+        & .heading__content:nth-child(5) {
+            top: 5%;
+            left: -11%;
+        }
+
+        & .heading__content:nth-child(6) {
+            top: -8%;
+            left: 10%;
+        }
+
+        & .heading__content:nth-child(7) {
+            top: 5%;
+            left: 31%;
+        }
+
+        & .heading__content:nth-child(8) {
+            top: -8%;
+            left: 54%;
+        }
+
+        & .heading__content:nth-child(9) {
+            top: 5%;
+            left: 73%;
+        }
+
+    }
+
+    .skinreborn__title h3 {
+        text-align: center;
     }
 }
 

@@ -30,17 +30,7 @@
         width: 80%;
     }
 
-    .skinreborn__step .skinreborn__image {
-        padding: 0;
-    }
-
-    .skinreborn__step ul {
-        padding: 0;
-
-        & li {
-            width: 100%;
-        }
-    }
+    
     .gallery__container{
 
         & .gallery__content {
@@ -110,9 +100,7 @@
     
     }
 
-    .skinreborn{
-        margin-bottom: 400px;
-    }
+   
     
     .body__detail {
         & .news__link {
@@ -147,15 +135,7 @@
 
     
     
-    .skinreborn {
-
-        & .skinreborn__image {
-           display: flex;
-           justify-content: center;
-        }
-
-      
-    }
+    
 
     .gallery__container{
         grid-template-columns: auto auto auto auto auto;
@@ -173,63 +153,7 @@
        display: none;
     }
 
-    .skinreborn__map {
-        background: url(../assets/images/ico-char-skin-2.png) no-repeat 50px 100px;
-        width: 100%;
-        margin-bottom: 100px;
-
-        & .skinreborn_text_replace {
-
-            left: 23%;
-            width: 60%;
-        }
-
-        & .heading__content:nth-child(1) {
-            top: 85%;
-            left: 3%;
-        }
-        
-        & .heading__content:nth-child(2) {
-            top: 100%;
-            left: 17%;
-        }
-
-        & .heading__content:nth-child(3) {
-            top: 85%;
-            left: 73%;
-        }
-
-        & .heading__content:nth-child(4) {
-            top: 100%;
-            left: 53%;
-        }
-
-        & .heading__content:nth-child(5) {
-            top: 13%;
-            left: -4%;
-        }
-
-        & .heading__content:nth-child(6) {
-            top: -2%;
-            left: 10%;
-        }
-
-        & .heading__content:nth-child(7) {
-            top: 9%;
-            left: 36%;
-        }
-
-        & .heading__content:nth-child(8) {
-            top: -2%;
-            left: 64%;
-        }
-
-        & .heading__content:nth-child(9) {
-            top: 13%;
-            left: 76%;
-        }
-
-    }
+    
     
     .gallery__container{
         grid-template-columns: auto auto auto;
