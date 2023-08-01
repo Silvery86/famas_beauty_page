@@ -184,7 +184,11 @@
     }
 }
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    .smartchoice_title h1 {
+        font-size: 22px;
+    }
+}
 
 
 
@@ -306,6 +310,29 @@
         animation: rotate-div 0.5s linear;
     }
 }
+
+@media only screen and (max-width: 1200px){}
+
+@media only screen and (max-width: 1024px){}
+
+@media only screen and (max-width: 768px) {
+    .philosophy__background {
+        background-size: cover;
+    }
+    
+    .philosophy__picture{
+    
+        margin-bottom: 30px;
+    
+        & img {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {}
+
 
 /* SKIN REBORN SECTION */
 

@@ -146,19 +146,7 @@
  
 
     
-    .philosophy__background {
-        background-size: cover;
-    }
-
-    .philosophy__picture{
-
-        margin-bottom: 30px;
     
-        & img {
-            width: 100%;
-            margin: 0;
-        }
-    }
     .skinreborn {
 
         & .skinreborn__image {
@@ -179,9 +167,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .smartchoice_title h1 {
-        font-size: 22px;
-    }
+    
 
     .navigation {
        display: none;
