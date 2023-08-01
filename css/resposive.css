@@ -1,3 +1,12 @@
+@media only screen and (max-width: 1200px){}
+
+@media only screen and (max-width: 1024px){}
+
+@media only screen and (max-width: 768px){}
+
+@media only screen and (max-width: 480px) {}
+
+
 @media only screen and (max-width: 1200px){
     
     .dropdown__title:nth-child(6) {
@@ -134,15 +143,7 @@
         max-width: 90%;
     }
 
-    .banner__button {
-        top: 76%;
-        left: 53%;
-
-        & button {
-            font-size: 15px;
-            padding: 10px 20px;
-        }
-    }
+ 
 
     .smartchoice_title h1 {
         font-size: 34px;
@@ -352,3 +353,5 @@
         }
     }
 }
+
+

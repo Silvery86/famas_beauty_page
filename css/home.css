@@ -31,6 +31,57 @@
     background-color: #c83232;   
 }
 
+@media only screen and (max-width: 1200px) {
+    .banner__button {
+        top: 77%;
+        left: 53%;
+
+        & button {
+            font-size: 16px;
+            padding: 15px 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .banner__button {
+        top: 76%;
+        left: 53%;
+
+        & button {
+            font-size: 15px;
+            padding: 10px 20px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .banner__image img {
+        width: 120%;
+    }
+
+    .banner__button {
+        top: 76%;
+        left: 56%;
+
+        & button {
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+    }
+     
+}
+
+
+
+
 /* SMARTCHOICE SECTION */
 .smartchoice {
     padding: 40px 0;
