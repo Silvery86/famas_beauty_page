@@ -1111,7 +1111,7 @@
 
 @media only screen and (max-width: 1024px) {
     .gallery__container{
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(4, 1fr);
         height: 640px;    
         
@@ -1135,7 +1135,7 @@
 
 @media only screen and (max-width: 768px) {
     .gallery__container{
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
         height: 640px;  
     }
@@ -1143,11 +1143,9 @@
 
 @media only screen and (max-width: 480px) {
     .gallery__container{
-        grid-template-columns: auto auto auto;
-        & .gallery__content {
-            width: 100%;
-            height: 150px;
-        }
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        height: 640px;  
 
         & .gallery__content:nth-child(3) {
             grid-row: 2 / 4;
@@ -1338,6 +1336,37 @@
     }
 } 
 
+@media only screen and (max-width: 1200px) {
+
+    .story {
+
+        & .story__form {
+            width: 100%;
+            margin: 10px 0;
+
+            & .form__input {
+                padding: 15px;
+            }
+
+            & .form__input button {
+                width: 90%;
+            }
+        }
+        
+
+        & .story__content {
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+ 
+}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 768px){}
+
+@media only screen and (max-width: 480px) {}
 /* NEWS SECTION */
 
 .news__container {
@@ -1475,5 +1504,40 @@
     animation: fade-in-div 0.5s linear;
 }
 
+@media only screen and (max-width: 1200px){}
 
+@media only screen and (max-width: 1024px) {
+    .body__detail {
+        & .news__link {
+        
+            & h5::after {          
+                right: 33%;
+            }
+    
+            & h5::before {
+             
+                left: 33%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){}
+
+@media only screen and (max-width: 480px) {
+    .body__detail {
+        & .news__link {
+        
+            & h5::after {          
+                right: 20%;
+            }
+    
+            & h5::before {
+             
+                left: 20%;
+            }
+        }
+    }
+
+}
 

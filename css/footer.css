@@ -189,9 +189,63 @@
         }
     }
 
+}
+
+@media only screen and (max-width: 1200px){}
+
+@media only screen and (max-width: 1024px){}
+
+@media only screen and (max-width: 768px){}
+
+@media only screen and (max-width: 480px) {
+    .footer__sitemap {
+        display: none;
+    }
+
+    .footer__digital {
+
+        & .row {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        & p {
+            text-align: center;
+        }
+
+        & .digital__socialmedia {
+            margin-bottom: 10px;
+        }
+    }
+
+    .about__logo {
+        margin-bottom: 20px;
+    }
+
+    .about__title {
+        
+
+        & h1 {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+
+    .about__address {
+        & h5 {
+            text-align: center;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+
     
 
- 
 }
 
 
