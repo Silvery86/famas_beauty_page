@@ -724,28 +724,29 @@
 
 .gallery__container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    align-content: center;
+    grid-template-columns: repeat(7, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
     gap: 2px;
-
-    & .gallery__content:nth-child(3) {
-        grid-row: 1 / 3;
-        grid-column: 3 /5 ;
-    }
-
+    height: 600px;
     & .gallery__content {
-        width: 100%;
-        height: 200px;
+       
         position: relative;
     }
+    & .gallery__content:nth-child(3) {
+        grid-row: 1 / 3;
+        grid-column: 3 / 5 ;
+    }
+
 
     & .gallery__content:nth-child(1) {
         background: url(../assets/images/gallery/img-gallery-1.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-2.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -756,11 +757,13 @@
 
     & .gallery__content:nth-child(2) {
         background: url(../assets/images/gallery/img-gallery-2.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-3.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -771,12 +774,14 @@
 
     & .gallery__content:nth-child(3) {
         background: url(../assets/images/gallery/img-gallery-3.jpg) no-repeat;
-        background-size: cover;
-        height: 400px;
+        background-size: cover; 
+        background-position: center;
+        
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-4.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -787,11 +792,13 @@
 
     & .gallery__content:nth-child(4) {
         background: url(../assets/images/gallery/img-gallery-4.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-5.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -802,11 +809,13 @@
 
     & .gallery__content:nth-child(5) {
         background: url(../assets/images/gallery/img-gallery-5.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-6.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -817,11 +826,13 @@
 
     & .gallery__content:nth-child(6) {
         background: url(../assets/images/gallery/img-gallery-6.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-7.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -832,11 +843,13 @@
 
     & .gallery__content:nth-child(7) {
         background: url(../assets/images/gallery/img-gallery-7.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-1.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -847,11 +860,13 @@
 
     & .gallery__content:nth-child(8) {
         background: url(../assets/images/gallery/img-gallery-1.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-3.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -862,11 +877,13 @@
 
     & .gallery__content:nth-child(9) {
         background: url(../assets/images/gallery/img-gallery-2.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-4.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -877,11 +894,13 @@
 
     & .gallery__content:nth-child(10) {
         background: url(../assets/images/gallery/img-gallery-3.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-5.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -892,11 +911,13 @@
 
     & .gallery__content:nth-child(11) {
         background: url(../assets/images/gallery/img-gallery-4.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-6.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -907,11 +928,13 @@
 
     & .gallery__content:nth-child(12) {
         background: url(../assets/images/gallery/img-gallery-5.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-7.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -922,11 +945,13 @@
 
     & .gallery__content:nth-child(13) {
         background: url(../assets/images/gallery/img-gallery-6.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-1.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -937,11 +962,13 @@
 
     & .gallery__content:nth-child(14) {
         background: url(../assets/images/gallery/img-gallery-7.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-2.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -952,11 +979,13 @@
 
     & .gallery__content:nth-child(15) {
         background: url(../assets/images/gallery/img-gallery-4.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-3.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -967,11 +996,13 @@
 
     & .gallery__content:nth-child(16) {
         background: url(../assets/images/gallery/img-gallery-5.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-4.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -982,11 +1013,13 @@
 
     & .gallery__content:nth-child(17) {
         background: url(../assets/images/gallery/img-gallery-6.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-5.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -997,11 +1030,13 @@
 
     & .gallery__content:nth-child(18) {
         background: url(../assets/images/gallery/img-gallery-7.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-position: center;
 
         &:hover {
             background: url(../assets/images/gallery/img-gallery-6.jpg) no-repeat;
-            background-size: cover;
+            background-size: cover; 
+            background-position: center;
         }
 
         &:hover a {
@@ -1031,10 +1066,8 @@
             height: 100%;
             margin: 0;
             padding: 10px 20px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            
+            float: left;
+            text-align: center;
         }
         
         & i {            
@@ -1043,10 +1076,9 @@
             height: 100%;
             margin: 0;
             padding: 10px 20px;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            
+            float: right;
+            text-align: center;
+           
         }
 
         &:hover p {
@@ -1055,6 +1087,76 @@
     }
 
 }
+
+@media only screen and (max-width: 1200px) {
+    .gallery__container{
+        height: 500px;
+    }
+
+    .gallery__content {
+
+        & a {
+
+            & p {
+                padding: 10px 0;
+            }
+
+            & i {
+                padding: 10px 0;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .gallery__container{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: 640px;    
+        
+    }
+
+    .gallery__content {
+
+        & a {
+
+            & p {
+                padding: 8px 0;
+            }
+
+            & i {
+                padding: 8px 0;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .gallery__container{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        height: 640px;  
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .gallery__container{
+        grid-template-columns: auto auto auto;
+        & .gallery__content {
+            width: 100%;
+            height: 150px;
+        }
+
+        & .gallery__content:nth-child(3) {
+            grid-row: 2 / 4;
+            grid-column: 1 / 3 ;
+        }
+    }
+
+}
+
 
 @keyframes fade-in-div {
     0% {
