@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             
             overlayPage.addEventListener('click', function () {
-                searchBoxContent.style.display = "none";
-                langMenu.style.display = "none";
+                searchBoxContent.classList.remove("show");
+                langMenu.classList.remove("show");
                 overlayPage.style.display = 'none';
             });
     }, 1000);
