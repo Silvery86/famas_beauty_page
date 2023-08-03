@@ -71,8 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var shrinkHeader = 199;
   window.addEventListener('scroll', function () {
       var scroll = getCurrentScroll();
-      console.log(scroll);
-      console.log(scroll > shrinkHeader);
+     
       if (scroll > shrinkHeader) {
           document.getElementById('navigation').classList.add('fixed');
          

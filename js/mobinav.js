@@ -13,13 +13,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {  
     setTimeout(() => {
+        var overlayPage = document.getElementById('overlay');
+        var searchBox = document.querySelector('.mobinav__searchbox');
         
-        var navLink = document.querySelector('.checkbox__input');
-        const navInputBox = document.getElementById('searchbox-input');
-        console.log(navInputBox)
-        if (navLink.classList.contains('show')) {
-            console.log(navLink.classList.contains('show'))
-            navInputBox.checked = true
-        }
+        var searchBoxContent = document.querySelector(".mobinav__searchbox .searchbox__content");
+        
+        searchBox.addEventListener("click", function (event) {
+            searchBoxContent.classList.add("show");
+            overlayPage.style.display = 'block';
+            event.preventDefault();
+            
+        });
+        var langBtn = document.querySelector('.mobinav__language .language__btn i')
+        var langMenu = document.querySelector(".mobinav__language .language__menu")
+        langBtn.addEventListener('click', function (event) {
+                langMenu.classList.add("show");
+                overlayPage.style.display = 'block';
+                event.preventDefault();
+            });
+            
+            overlayPage.addEventListener('click', function () {
+                searchBoxContent.style.display = "none";
+                langMenu.style.display = "none";
+                overlayPage.style.display = 'none';
+            });
     }, 1000);
 });
+

@@ -50,42 +50,30 @@
         <div class="col-lg-2 col-md-2 col-sm-2 col-2">
             <div class="mobinav__option">
               <div class="mobinav__language">
-                <ul class="nav">
-                    <li class="nav-item dropdown">
-                      <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-gear" id="btn"></i></a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <img src="../../assets/images/lang-en.png"> 
-                            <span>English</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                          <img src="../../assets/images/lang-vi.png"> 
-                          <span>Vietnamese</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>                    
-                </ul>
+                <a href="" class="language__btn">
+                  <i class="fa-solid fa-gear" id="btn"></i>
+                </a>
+                <div class="language__menu">
+                  <a class="dropdown-item" href="#">
+                    <img src="../../assets/images/lang-en.png"> 
+                    <span>English</span>
+                  </a>
+              
+                  <a class="dropdown-item" href="#">
+                  <img src="../../assets/images/lang-vi.png"> 
+                  <span>Vietnamese</span>
+                  </a>
+                </div>
               </div>
               <div class="mobinav__searchbox">
-                <ul class="nav">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                    <ul class="dropdown-menu w-100 h-100">
-                      <li>
-                        <div class="searchbox__content">
-                          <input type="text" placeholder="Từ khóa tìm kiếm">
-                          <button>TÌM</button>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+                <a href="" class="searchbox__btn">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                    <div class="searchbox__content">
+                      <input type="text" id="searchbox__input" placeholder="Từ khóa tìm kiếm">
+                      <a href="">TÌM</a>
+                    </div>                
+                     
               </div>
               
             </div>

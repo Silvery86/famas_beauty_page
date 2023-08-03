@@ -52,6 +52,23 @@
     }
 }
 
+
+
+
+.mobinav__searchbox {
+    
+    & .searchbox__content {
+
+        display: none;
+    }
+    
+
+    & .searchbox__content.show {
+        display: block;
+    }
+}
+
+
 .nav__mobile{
     position: fixed;
     top: 0;
@@ -113,12 +130,7 @@
     display: none;
 }
 
-.searchbox__content{
-    position: absolute;
-    left: 0;
-    width: 900px;
-    
-}
+
 
 .nav__input:checked ~ #main-content{
     transform: translateX(320px) !important;
@@ -137,16 +149,81 @@
     transition: transform linear 0.3s;
 }
 #main-content.slide{
-    transform: translateX(440px);
-    
+    transform: translateX(440px);    
 }
+
+#overlay {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    height: 100vh;
+    background-color: black;
+    z-index: 1000;
+    opacity: 50%;
+}
+
+.language__menu {
+    display: none;
+}
+
+.language__menu.show {
+    display: block;
+}
+.language__menu {
+    position: absolute;
+    left: 80%;
+    top: 52px;
+    background-color: var(--light-gray);
+    padding: 10px;
+    z-index: 9999;
+
+    & .dropdown-item {
+        margin: 5px 0;
+        padding: 5px;
+        background-color: var(--white);
+    }
+}
+
+
 
 @media only screen and (max-width: 1200px){}
 
 @media only screen and (max-width: 1024px) {
+    .navigation {
+        border-bottom: none;
+    }
     .mobi_nav {
         display: block;
     }
+    .searchbox__content {
+        position: absolute;
+        top:52px;
+        left: 20px;
+        width: calc(100% - 40px);
+        background-color: var(--white);
+        padding: 10px 20px;
+        z-index: 9999;
+
+        & input {
+            width: calc(75% - 10px);
+            padding: 5px 10px;
+            border: none;
+        }
+
+        & a {
+            width: 10%;
+            padding: 5px 10px;
+            float: right;
+            color: var(--white);
+            background-color: var(--primary);
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+    
 }
 
 @media only screen and (max-width: 768px){}
